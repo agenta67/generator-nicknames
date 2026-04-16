@@ -27,3 +27,4 @@ if mode == 1:
         else:
     print("Неверный выбор")
     nickname = "error"
+print("Твой ник:", nickname)
