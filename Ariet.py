@@ -24,3 +24,6 @@ if mode == 1:
     letters = string.ascii_lowercase
     while len(nickname) < length:
         nickname = nickname + random.choice(letters)
+        else:
+    print("Неверный выбор")
+    nickname = "error"
