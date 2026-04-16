@@ -7,3 +7,4 @@ common = ["Fast", "Cool", "Lucky", "Crazy", "Pro", "Mega"]
 mode = int(input("Тип ника (1-осмысленный, 2-рандом): ").strip())
 length = int(input("Длина ника: ").strip())
 nickname = ""
+if mode == 1:
