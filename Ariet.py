@@ -23,9 +23,4 @@ if mode == 1:
             break
 
         nickname = nickname + word
-        elif mode == 2:
-    letters = string.ascii_lowercase
-
-    while len(nickname) < length:
-        nickname = nickname + random.choice(letters)
         
