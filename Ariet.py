@@ -8,3 +8,4 @@ mode = int(input("Тип ника (1-осмысленный, 2-рандом): ")
 length = int(input("Длина ника: ").strip())
 nickname = ""
 if mode == 1:
+   theme = input("Тема (1-фэнтези, 2-кибер, 3-обычный): ").strip()
