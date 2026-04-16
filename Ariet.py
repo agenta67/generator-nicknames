@@ -27,3 +27,6 @@ elif mode == 2:
    letters_and_digits = string.ascii_lowercase + string.digits
    while len(nickname) < length:
     nickname += random.choice(letters_and_digits)
+else:
+    print("Неверный выбор")
+    nickname = "error"
