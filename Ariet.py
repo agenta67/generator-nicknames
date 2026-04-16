@@ -23,3 +23,4 @@ if mode == 1:
    digits = string.digits
    while len(nickname) < length:
      nickname += random.choice(digits)  
+elif mode == 2:
