@@ -19,11 +19,14 @@ if mode == 1:
         word = random.choice(words)
         if len(nickname) + len(word) > length:
             break
-        nickname = nickname + word
-elif mode == 2:
-    letters = string.ascii_lowercase
+        nickname += word
+    digits = string.digits
     while len(nickname) < length:
-        nickname = nickname + random.choice(letters)
+        nickname += random.choice(digits)
+elif mode == 2:
+    letters_and_digits = string.ascii_lowercase + string.digits
+    while len(nickname) < length:
+        nickname += random.choice(letters_and_digits)
 else:
     print("Неверный выбор")
     nickname = "error"
