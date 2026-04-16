@@ -24,3 +24,4 @@ if mode == 1:
    while len(nickname) < length:
      nickname += random.choice(digits)  
 elif mode == 2:
+   letters_and_digits = string.ascii_lowercase + string.digits
