@@ -9,3 +9,9 @@ length = int(input("Длина ника: ").strip())
 nickname = ""
 if mode == 1:
    theme = input("Тема (1-фэнтези, 2-кибер, 3-обычный): ").strip()
+if theme == "1":
+    words = fantasy
+elif theme == "2":
+    words = cyber
+else:
+    words = common
