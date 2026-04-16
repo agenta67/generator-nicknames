@@ -15,3 +15,8 @@ elif theme == "2":
     words = cyber
 else:
     words = common
+while True:
+    word = random.choice(words)
+    if len(nickname) + len(word) > length:
+        break
+    nickname += word
