@@ -30,3 +30,4 @@ elif mode == 2:
 else:
     print("Неверный выбор")
     nickname = "error"
+print("Твой ник:", nickname)
