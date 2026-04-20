@@ -26,3 +26,4 @@ while True:
             nickname += random.choice(digits)
    elif mode == 2:
       letters = "abcdefghijklmnopqrstuvwxyz"
+      letters_and_digits = letters + digits
