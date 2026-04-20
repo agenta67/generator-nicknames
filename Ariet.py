@@ -37,3 +37,6 @@ while True:
         continue
    print("Your nickname:", nickname)
    answer = input("Do you like the nickname? (yes/no): ").strip().lower()
+   if answer == "yes":
+        print("Great choice!")  
+        break
