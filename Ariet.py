@@ -40,3 +40,5 @@ while True:
    if answer == "yes":
         print("Great choice!")  
         break
+    else:
+        print("\nStarting over...\n")
