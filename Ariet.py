@@ -1,2 +1,5 @@
 import random
 print("=== Nickname Generator ===") 
+fantasy = ["Dragon", "Shadow", "Knight", "Wizard", "Blade", "Elf","Necromancy","Sorcery","Goblin","Dwarf","Overlord"]
+cyber = ["Neo", "Cyber", "Byte", "Zero", "Glitch", "Core","Byte","Hacker","Vector","Binary","Exe","Node","Secure"]
+common = ["Fast", "Cool", "Lucky", "Crazy", "Pro", "Mega","Sigma","Alpha","Beta","Sahur","Overvoltage","Nimble"]
