@@ -18,3 +18,6 @@ while True:
         nickname = ""
       while True:
          word = random.choice(words)
+         if len(nickname) + len(word) > length - 1:  
+                break
+            nickname += word
