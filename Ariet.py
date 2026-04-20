@@ -15,3 +15,4 @@ while True:
             words = cyber
         else:
             words = common
+        nickname = ""
