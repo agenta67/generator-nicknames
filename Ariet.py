@@ -29,3 +29,5 @@ while True:
       letters_and_digits = letters + digits
       nickname = ""
       nickname += random.choice(digits)
+      while len(nickname) < length:
+            nickname += random.choice(letters_and_digits)
