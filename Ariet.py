@@ -28,3 +28,4 @@ while True:
       letters = "abcdefghijklmnopqrstuvwxyz"
       letters_and_digits = letters + digits
       nickname = ""
+      nickname += random.choice(digits)
