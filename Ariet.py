@@ -22,3 +22,5 @@ while True:
                 break
             nickname += word
        nickname += random.choice(digits)
+      while len(nickname) < length:
+            nickname += random.choice(digits)
