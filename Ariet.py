@@ -36,3 +36,4 @@ while True:
         print("Invalid choice")
         continue
    print("Your nickname:", nickname)
+   answer = input("Do you like the nickname? (yes/no): ").strip().lower()
