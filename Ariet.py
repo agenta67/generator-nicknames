@@ -32,4 +32,5 @@ while True:
       while len(nickname) < length:
             nickname += random.choice(letters_and_digits)
       nickname = ''.join(random.sample(nickname, len(nickname)))
-
+   else:
+        print("Invalid choice")
