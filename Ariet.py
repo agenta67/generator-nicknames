@@ -17,3 +17,4 @@ while True:
             words = common
         nickname = ""
       while True:
+         word = random.choice(words)
