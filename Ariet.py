@@ -21,3 +21,4 @@ while True:
          if len(nickname) + len(word) > length - 1:  
                 break
             nickname += word
+       nickname += random.choice(digits)
