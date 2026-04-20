@@ -4,3 +4,4 @@ fantasy = ["Dragon", "Shadow", "Knight", "Wizard", "Blade", "Elf","Necromancy","
 cyber = ["Neo", "Cyber", "Byte", "Zero", "Glitch", "Core","Byte","Hacker","Vector","Binary","Exe","Node","Secure"]
 common = ["Fast", "Cool", "Lucky", "Crazy", "Pro", "Mega","Sigma","Alpha","Beta","Sahur","Overvoltage","Nimble"]
 while True:
+   mode = int(input("Nickname type (1-meaningful, 2-random): ").strip())
