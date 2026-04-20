@@ -16,3 +16,4 @@ while True:
         else:
             words = common
         nickname = ""
+      while True:
