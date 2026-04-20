@@ -9,3 +9,9 @@ while True:
    digits = "0123456789"
    if mode == 1:
       theme = input("Theme (1-fantasy, 2-cyber, 3-common): ").strip()
+       if theme == "1":
+            words = fantasy
+        elif theme == "2":
+            words = cyber
+        else:
+            words = common
