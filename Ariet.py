@@ -34,3 +34,4 @@ while True:
       nickname = ''.join(random.sample(nickname, len(nickname)))
    else:
         print("Invalid choice")
+        continue
