@@ -5,3 +5,4 @@ cyber = ["Neo", "Cyber", "Byte", "Zero", "Glitch", "Core","Byte","Hacker","Vecto
 common = ["Fast", "Cool", "Lucky", "Crazy", "Pro", "Mega","Sigma","Alpha","Beta","Sahur","Overvoltage","Nimble"]
 while True:
    mode = int(input("Nickname type (1-meaningful, 2-random): ").strip())
+   length = int(input("Nickname length: ").strip())
