@@ -8,3 +8,4 @@ while True:
    length = int(input("Nickname length: ").strip())
    digits = "0123456789"
    if mode == 1:
+      theme = input("Theme (1-fantasy, 2-cyber, 3-common): ").strip()
