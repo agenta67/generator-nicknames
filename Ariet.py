@@ -6,3 +6,4 @@ common = ["Fast", "Cool", "Lucky", "Crazy", "Pro", "Mega","Sigma","Alpha","Beta"
 while True:
    mode = int(input("Nickname type (1-meaningful, 2-random): ").strip())
    length = int(input("Nickname length: ").strip())
+   digits = "0123456789"
