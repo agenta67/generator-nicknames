@@ -1,33 +1,44 @@
 import random
-import string
-print("=== Генератор никнеймов ===")
-fantasy = ["Dragon", "Shadow", "Knight", "Wizard", "Blade", "Elf"]
-cyber = ["Neo", "Cyber", "Byte", "Zero", "Glitch", "Core"]
-common = ["Fast", "Cool", "Lucky", "Crazy", "Pro", "Mega"]
-mode = int(input("Тип ника (1-осмысленный, 2-рандом): ").strip())
-length = int(input("Длина ника: ").strip())
-nickname = ""
-if mode == 1:
-   theme = input("Тема (1-фэнтези, 2-кибер, 3-обычный): ").strip()
-   if theme == "1":
-     words = fantasy
-   elif theme == "2":
-     words = cyber
-   else:
-     words = common
-   while True:
-     word = random.choice(words)
-     if len(nickname) + len(word) > length:
+print("=== Nickname Generator ===")
+fantasy = ["Dragon", "Shadow", "Knight", "Wizard", "Blade", "Elf","Necromancy","Sorcery","Goblin","Dwarf","Overlord"]
+cyber = ["Neo", "Cyber", "Byte", "Zero", "Glitch", "Core","Byte","Hacker","Vector","Binary","Exe","Node","Secure"]
+common = ["Fast", "Cool", "Lucky", "Crazy", "Pro", "Mega","Sigma","Alpha","Beta","Sahur","Overvoltage","Nimble"]
+while True:
+    mode = int(input("Nickname type (1-meaningful, 2-random): ").strip())
+    length = int(input("Nickname length: ").strip())
+    digits = "0123456789"
+    if mode == 1:
+        theme = input("Theme (1-fantasy, 2-cyber, 3-common): ").strip()
+        if theme == "1":
+            words = fantasy
+        elif theme == "2":
+            words = cyber
+        else:
+            words = common
+        nickname = ""
+        while True:
+            word = random.choice(words)
+            if len(nickname) + len(word) > length - 1:  
+                break
+            nickname += word
+        nickname += random.choice(digits)
+        while len(nickname) < length:
+            nickname += random.choice(digits)
+    elif mode == 2:
+        letters = "abcdefghijklmnopqrstuvwxyz"
+        letters_and_digits = letters + digits
+        nickname = ""
+        nickname += random.choice(digits)
+        while len(nickname) < length:
+            nickname += random.choice(letters_and_digits)
+        nickname = ''.join(random.sample(nickname, len(nickname)))
+    else:
+        print("Invalid choice")
+        continue
+    print("Your nickname:", nickname)
+    answer = input("Do you like the nickname? (yes/no): ").strip().lower()
+    if answer == "yes":
+        print("Great choice!")
         break
-     nickname += word
-   digits = string.digits
-   while len(nickname) < length:
-     nickname += random.choice(digits)  
-elif mode == 2:
-   letters_and_digits = string.ascii_lowercase + string.digits
-   while len(nickname) < length:
-    nickname += random.choice(letters_and_digits)
-else:
-    print("Неверный выбор")
-    nickname = "error"
-print("Твой ник:", nickname)
+    else:
+        print("\nStarting over...\n")
